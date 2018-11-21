@@ -214,10 +214,9 @@ $(function () {
         var ulStr = liStrArr.fill(liStr).join("");
         var liStrs = "<ul class='slide-img-mult'>" + ulStr + "</ul>";
         $dom.after(newImgDiv);
-        newImgDiv.append(liStrs).fadeIn();
+        newImgDiv.append(liStrs);
         setTimeout(function () {
             newImgDiv.fadeIn().remove();
-            alert("ok");
             $dom.fadeIn();
         }, 1500)
     }
